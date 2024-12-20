@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+        	<head>
+        	<meta charset="UTF-8">
+        	<title>Insert title here</title>
+        	<style type="text/css">
+        	body {
+        	    font-family: Arial, sans-serif;
+        	    background-color: #f0f0f0;
+        	    margin: 0;
+        	    padding: 0;
+        	}
+
+        	table {
+        	    background-color: #fff;
+        	    border-collapse: collapse;
+        	    width: 60%;
+        	    margin: 50px auto;
+        	    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        	    border-radius: 8px;
+        	    overflow: hidden;
+        	}
+
+        	td {
+        	    padding: 15px;
+        	    font-size: 16px;
+        	    text-align: left;
+        	}
+
+        	thead td {
+        	    font-weight: bold;
+        	    font-size: 20px;
+        	    background-color: #4CAF50;
+        	    color: white;
+        	    text-align: center;
+        	    padding: 20px;
+        	}
+
+        	table select, table button {
+        	    width: 100%;
+        	    padding: 10px;
+        	    font-size: 14px;
+        	    border: 1px solid #ccc;
+        	    border-radius: 4px;
+        	    background-color: #f9f9f9;
+        	}
+
+        	table select:focus, table button:focus {
+        	    outline: none;
+        	    border-color: #4CAF50;
+        	}
+
+        	a.input {
+        	    background-color: #4CAF50;
+        	    color: white;
+        	    border: none;
+        	    cursor: pointer;
+        	    transition: background-color 0.3s ease;
+        	}
+
+        	a.input:hover {
+        	    background-color: #45a049;
+        	}
+
+        	 a {
+        	    color: blue;
+        	    text-decoration: none;
+        	}
+
+        	button[type="Reset"] {
+        	    background-color: #f44336;
+        	}
+
+        	button[type="Reset"]:hover {
+        	    background-color: #e53935;
+        	}
+
+        	@media screen and (max-width: 768px) {
+        	    table {
+        	        width: 90%;
+        	    }
+        	}
+
+        	</style>
+        	</head>
+        	<body>
+        	<table border="0" align="center">
+        	            <form action="Serv.jsp" method="post">
+        	                <thead>
+        	                <tr>
+        	                    <td colspan="2" ><b>KCE Portal </b></td>
+        	                </tr>
+        	            </thead>
+        	            <tr>
+        	            <td>Academic Year</td>
+        	            <td><select id="AcYear" name="AcYear">
+        	                <option>Select Academic Year</option>
+        	             <option value="2021-2022">2021-2022</option>
+        	              <option value="2022-2023">2022-2023 </option>
+        	            <option value="2023-2024">2023-2024</option>
+        	            </select></td>
+        	            </tr>
+        	            <tr>
+        	            <td>Programming</td>
+        	            <td><select id="Program" name="Program">
+        	                <option>Select Programming</option>
+        	             <option value="B.Tech Information Technology">B.Tech Information Technology</option>
+        	             <option value="B.Tech Artificial intelligence and Data Science">B.Tech Artificial intelligence and Data Science </option>
+        	            <option value="B.E Electrical and Electronics Engineering">B.E Electrical and Electronics Engineering </option>
+        	            <option value="B.E Electronics and Communication Engineering">B.E Electronics and Communication Engineering </option>
+        	            </select></td>
+        	            </tr>
+        	            <tr>
+        	            <td>Year</td>
+        	            <td><select id="Year" name="Year">
+        	                <option>Select Year</option>
+        	             <option value="I">I</option>
+        	              <option value="II">II </option>
+        	            <option value="III">III</option>
+        	            <option value="IV">IV </option>
+        	            </select></td>
+        	            </tr>
+        	            <tr>
+        	            <td>Semester</td>
+        	            <td><select id="semester" name="semester">
+        	                <option>Select Semester</option>
+        	             <option value="I">I</option>
+        	             <option value="II">II </option>
+        	            <option value="III">III</option>
+        	            <option value="IV">IV </option>
+        	            <option value="V">V</option>
+        	             <option value="VI">VI </option>
+        	            <option value="VII">VII</option>
+        	            <option value="VIII">VIII </option>
+        	            </select></td>
+        	            </tr>
+        	            <tr>
+        	            <td>Section</td>
+        	            <td><select id="section" name="section">
+        	                <option>Select Section</option>
+        	             <option value="A">A</option>
+        	              <option value="B">B </option>
+        	            <option value="C">C</option>
+        	            <option value="ALL">All</option>
+        	            </select></td>
+        	            </tr>
+        	             <tr>
+        	            <td>Course code & Title</td>
+        	            <td><select id="Course code & Title" name="Course code & Title">
+        	                <option>Select Course code & Title</option>
+        	             <option value="21FD20 & Automata Theory and Compiler Design">21FD20 & Automata Theory and Compiler Design</option><br>
+        	              <option value="21FE05 & Design and Analysis of Algorithms">21FE05 & Design and Analysis of Algorithms </option><br>
+        	            <option value="21FE18 & Web Application Development Using Java">21FE18 & Web Application Development Using Java</option><br>
+        	            <option value="21FE27 & Artificial Intelligence">21FE27 & Artificial Intelligence </option><br>
+        	            </select></td>
+        	            </tr>
+        	            <tr>
+        	                <td>Course Faculty</td>
+        	                <td><select id="Course Faculty" name="Course Faculty">
+        	                    <option>Select Course Faculty</option>
+        	                 <option value="Dr. Guhan T, ASP/IT">Dr. Guhan T, ASP/IT</option><br>
+        	                  <option value="Ms. Aarthi D, AP/CS">Ms. Aarthi D, AP/CS </option><br>
+        	                <option value="Mr. Jegathesh P, AP/IT">Mr. Jegathesh P, AP/IT</option><br>
+        	                <option value="Dr. Durga Devi M, Professor/IT">Dr. Durga Devi M, Professor/IT, </option><br>
+        	                </select></td>
+        	                </tr>
+        	                <tr>
+        	                <td colspan="2">
+        	                <button type="Reset" id="value">Reset</button>
+        	                <button onclick="getOption()">Click Here To Verify</button>
+        	              <a href = "Pg2.html"> <input type="button" value="Submit" ></a>
+        	            </td>
+        	            </tr>
+        	          </form>     
+        	        </table>
+        	        <script type="text/javascript">
+        	function getOption() {
+        	    var AcYear = document.getElementById("AcYear").value;
+        	    var Program = document.getElementById("Program").value;
+        	    var Year = document.getElementById("Year").value;
+        	    var Semester = document.getElementById("semester").value;
+        	    var Section = document.getElementById("section").value;
+        	    var Cct = document.getElementById("Course code & Title").value;
+        	    var Cf = document.getElementById("Course Faculty").value;
+
+        	    
+        	    if (
+        	        AcYear !== "Select Academic Year" &&
+        	        Program !== "Select Programming" &&
+        	        Year !== "Select Year" &&
+        	        Semester !== "Select Semester" &&
+        	        Section !== "Select Section" &&
+        	        Cct !== "Select Course code & Title" &&
+        	        Cf !== "Select Course Faculty"
+        	    ) {
+        	        alert("Founded");
+        	    } else {
+        	        alert("Not Found");
+        	    }
+        	}
+        	</script>
+        	</body>
+        	</html>

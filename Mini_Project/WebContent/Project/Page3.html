@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style>
+/* Basic reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Table styling */
+table {
+    width: 50%;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+    border-collapse: separate;
+    border-spacing: 10px;
+}
+
+thead td {
+    font-weight: bold;
+    font-size: 18px;
+    background-color: #4CAF50;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Header row styling */
+b {
+    font-size: 24px;
+    color: #333333;
+}
+
+/* Input field styling */
+input[type="text"], input[type="number"] {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+    font-size: 16px;
+    color: #333333;
+}
+
+/* Submit button styling */
+input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+/* Table cell alignment */
+td {
+    padding: 10px;
+    vertical-align: middle;
+}
+
+/* Centering the table */
+table {
+    margin: 0 auto;
+}
+</style>
+</head>
+<body>
+<table border="0" align="center">
+<form action="Serv.jsp" method="post">
+<thead>
+<tr>
+<td colspan="2"><b>Marks</b>
+</td>
+</tr>
+</thead>
+<tr>
+<td colspan="1">Roll Number
+<td colspan="1"> <input type="text" name="roll" >
+</td>
+<tr>
+<td colspan="1">Name
+<td colspan="1"> <input type="text" name="name" >
+</td>
+</tr>
+</tr>
+<tr>
+<td colspan="1">CO1
+<td colspan="1"> <input type="number" name="co1" value="CO1">
+</td>
+</tr>
+<tr>
+<td colspan="1">CO2
+<td colspan="1"> <input type="number" name="co2" value="CO2">
+</td>
+</tr>
+<tr>
+<td colspan="1">CO3
+<td colspan="1"> <input type="number" name="co3" value="CO3">
+</td>
+</tr>
+<tr>
+<td colspan="1">Total
+<td colspan="1"> <input type="number" name="total" value="total">
+</td>
+</tr>
+<tr>
+<td colspan="2"> <input type="submit" name="Update" value="save">
+</td>
+</tr>
+</tr>
+<tr>
+<td colspan="2"> <button type="submit" name="seetheresult" value="seetheresult">
+</td>
+</tr>
+</form>
+</table>
+</body>
+</html>

@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+
+table {
+    background-color: #fff;
+    border-collapse: collapse;
+    width: 40%;
+    margin: 50px auto;
+    border: 2px solid #ccc;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+thead td {
+    font-weight: bold;
+    font-size: 18px;
+    background-color: #4CAF50;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+td {
+    padding: 15px;
+    font-size: 16px;
+    text-align: left;
+}
+
+input[type="radio"] {
+    margin-left: 15px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    font-size: 16px;
+    border-radius: 4px;
+    border: none;
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+button[type="reset"] {
+    background-color: #f44336;
+}
+
+button[type="reset"]:hover {
+    background-color: #e53935;
+}
+
+@media screen and (max-width: 768px) {
+    table {
+        width: 90%;
+    }
+}
+
+</style>
+</head>
+<body>
+<table align="center" border="0">
+            <form action="Serv.jsp">
+                <thead>
+                    <tr>
+                        <td colspan="2"><b>Select Exams</b></td>
+                    </tr>
+                </thead>
+                <tr>
+                    <td>CIA 1:
+                       <input type="radio" id="cia1" name="exam" value ="cia1">
+                    </td>
+                </tr>
+                <br/>
+                <tr>
+                    <td>CIA 2:
+                       <input type="radio" id="cia2" name="exam" value ="cia2">
+                    </td>
+                </tr>
+                <br/>
+                <tr>
+                    <td>Assignment 1:
+                       <input type="radio" id="ass1" name="exam" value ="ass1">
+                    </td>
+                </tr>
+                <br/>
+                <tr>
+                    <td>Assignment 2:
+                       <input type="radio" id="ass2" name="exam" value ="ass2">
+                    </td>
+                </tr>
+                <br/>
+                <tr>
+                    <td>Semester Exam:
+                       <input type="radio" id="SemEx" name="exam" value ="Sem">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                    <button type="Reset" id="value">Reset</button>
+                    <br>
+                    <a href = "Page3.html"><input type="button" value="submit" id="value" ></a>
+                    <br>
+                </td>
+                </tr>
+                <tr>
+                <td>
+                <button type="button">See the Result</button>
+                </td>
+                </tr>
+            </form>
+</table>
+<script type="text/javascript">
+function getOption(){
+	let cia1 = document.getElementByid("cia1").value;
+	let cia2 = document.getElementByid("cia2").value
+	let ass1 = document.getElementByid("ass1").value
+	let ass2 = document.getElementByid("ass2").value
+	let SemEx = document.getElementByid("SemEx").value
+	
+	if(cia1 == CIA1){
+		alert("Mark founded")
+	}
+	else{
+		alert("Mark Not Founded")
+	}
+}
+</script>
+</body>
+</html>
